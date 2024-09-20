@@ -92,6 +92,9 @@ jobs:
 
       - name: Set up Kubeconfig
         run: echo "${{ secrets.KUBECONF }}" > $HOME/.kube/config
+      
+      - name: List files
+        run: ls -R
 
       - name: Deploy to Kubernetes (Development)
         run: kubectl apply -f deployment.yaml
