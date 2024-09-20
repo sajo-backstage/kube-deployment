@@ -13,7 +13,7 @@ def sampleroute():
 
 @app.get("/python")
 def python():
-    return "Hello, Python!"
+    return "Hello from Python!"
 
 if __name__ == "__main__":
     import uvicorn
