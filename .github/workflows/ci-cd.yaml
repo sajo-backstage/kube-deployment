@@ -94,4 +94,4 @@ jobs:
         run: echo "${{ secrets.KUBECONF }}" > $HOME/.kube/config
 
       - name: Deploy to Kubernetes (Development)
-        run: kubectl apply -f kubernetes/dev-deployment.yaml
+        run: kubectl apply -f deployment.yaml
