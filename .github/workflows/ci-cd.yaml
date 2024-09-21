@@ -97,4 +97,4 @@ jobs:
         run: ls -R
 
       - name: Deploy to Kubernetes (Development)
-        run: kubectl apply -f kubernetes/dev.yaml
+        run: kubectl apply -f kubernetes/development.yaml
